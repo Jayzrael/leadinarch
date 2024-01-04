@@ -2524,7 +2524,21 @@ a.button-style-3:hover::before {
   position: relative;
   display: block;
   overflow: hidden;
-  z-index: 10;
+  z-index: 70;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.background-image {
+  position: absolute;
+  background-position: 50% 50%;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire container */
+  background: url(../images/project/30.png) center center/cover; /* Set the background image */
+  opacity: 0.8; /* Adjust the opacity to darken the image */
 }
 
 .banner-one__inner {
@@ -2585,25 +2599,32 @@ a.button-style-3:hover::before {
 }
 
 .banner-one__content {
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
   position: relative;
   display: block;
   z-index: 10;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .banner-one__sub-title {
   position: relative;
   display: inline-block;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 26px;
   color: var(--arckytec-base);
+  /* color: #fff; */
   text-transform: capitalize;
 }
 
 .banner-one__title {
   position: relative;
   font-size: 80px;
-  color: var(--arckytec-black);
+  /* color: var(--arckytec-black); */
+  color: #fff;
   font-weight: 700;
   line-height: 80px;
   text-transform: capitalize;
@@ -2618,7 +2639,8 @@ a.button-style-3:hover::before {
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
-  color: var(--arckytec-gray);
+  /* color: var(--arckytec-gray); */
+  color: #fff;
   margin-bottom: 33px;
 }
 
@@ -4401,6 +4423,7 @@ a.button-style-3:hover::before {
   font-size: 14px;
   color: #babbbd;
   line-height: 20px;
+  width: 100%;
 }
 
 .footer-widget__contact-list {
