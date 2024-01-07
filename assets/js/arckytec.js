@@ -485,3 +485,5 @@
     dynamicBackground();
   });
 })(jQuery);
+
+// script.js

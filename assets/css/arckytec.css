@@ -194,6 +194,12 @@ ul {
   }
 }
 
+@media (max-width: 1350px) {
+  .container {
+    max-width: 1350px;
+  }
+}
+
 ::-webkit-input-placeholder {
   color: inherit;
   opacity: 1;
@@ -2529,23 +2535,50 @@ a.button-style-3:hover::before {
 }
 
 .background-image {
-  position: absolute;
-  background-position: 50% 50%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
   background-size: cover;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover; /* Ensure the image covers the entire container */
-  background: url(../images/project/30.png) center center/cover; /* Set the background image */
+  background: rgba(0, 0, 0, 0.65);
+  /* background: url(../images/project/31.png) center center/cover;  */
   opacity: 0.8; /* Adjust the opacity to darken the image */
+}
+
+.contentt {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 1350px) {
+  .container {
+    max-width: 1350px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .container {
+    max-width: 1350px;
+  }
 }
 
 .banner-one__inner {
   position: relative;
-  padding-top: 175px;
-  padding-bottom: 180px;
-  z-index: 10;
+  /* object-fit: cover; */
+
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s ease-in-out;
 }
 
 .banner-one__img {
@@ -2598,17 +2631,6 @@ a.button-style-3:hover::before {
   width: auto;
 }
 
-.banner-one__content {
-  background: rgba(0, 0, 0, 0.65);
-  color: white;
-  position: relative;
-  display: block;
-  z-index: 10;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .banner-one__sub-title {
   position: relative;
   display: inline-block;
@@ -2652,7 +2674,7 @@ a.button-style-3:hover::before {
   width: 220px;
   border-radius: 50%;
   background-color: var(--arckytec-base);
-  z-index: 1;
+  z-index: 10;
 }
 
 .banner-one__curved-circle .curved-circle {
@@ -2673,10 +2695,10 @@ a.button-style-3:hover::before {
 
 @keyframes rotation {
   from {
-    transform: rotate(0deg);
+    transform: rotate(359deg);
   }
   to {
-    transform: rotate(359deg);
+    transform: rotate(0deg);
   }
 }
 

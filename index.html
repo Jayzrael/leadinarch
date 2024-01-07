@@ -218,8 +218,8 @@
 
       <!-- Banner One Start -->
       <section class="banner-one">
-        <div class="banner-one__inner">
-          <div class="banner-one__img">
+        <div id="backgroundslide" class="banner-one__inner">
+          <!-- <div class="banner-one__img">
             <img src="assets/images/resources/banner-one-img-1-1.jpg" alt="" />
           </div>
           <div class="banner-one__shape-1 float-bob-y"></div>
@@ -231,48 +231,48 @@
           </div>
           <div class="banner-one__shape-4 img-bounce">
             <img src="assets/images/shapes/banner-one-shape-4.png" alt="" />
-          </div>
+          </div> -->
           <div class="container">
-            <div class="background-image"></div>
-            <div class="banner-one__content">
-              <p class="banner-one__sub-title">Inspiring Innovation Ahead</p>
-              <h2 class="banner-one__title">
-                <!-- Creative and Awe <br />
-                inspiring Spaces and <br />
-                Structures -->
-                We Will Make <br />
-                Your Dream Come True
-              </h2>
-              <p class="banner-one__text">
-                Providing top-notch designs and services through unrivalled
-                creativity to our clients with honesty and integrity <br />
-                To be renowned for creating places that greatly enhance human
-                experience. <br />
-                To provide client focused service through our responsible
-                practice of Architecture.
-              </p>
-              <div class="btn-box">
-                <a href="about.html" class="button-style-1">
-                  About Us
-                  <span class="icon-right"></span>
-                </a>
-                <a href="services.html" class="button-style-2">
-                  Our Services
-                  <span class="icon-right"></span>
-                </a>
-              </div>
-              <div class="banner-one__curved-circle">
-                <div class="curved-circle">Get In Touch - Get In Touch -</div>
-                <!-- /.curved-circle -->
-                <div class="banner-one__video-link">
-                  <a href="contact.html">
-                    <div class="banner-one__video-icon">
-                      <span class="icon-up-right-arrow"></span>
-                    </div>
+            <div class="background-image">
+              <div class="contentt">
+                <p class="banner-one__sub-title">Inspiring Innovation Ahead</p>
+                <h2 class="banner-one__title">
+                  <!-- Creative and Awe <br />
+                  inspiring Spaces and <br />
+                  Structures -->
+                  We Will Make <br />
+                  Your Dream Come True
+                </h2>
+                <p class="banner-one__text">
+                  Providing top-notch designs and services through unrivalled
+                  creativity to our clients with honesty and integrity <br />
+                  To be renowned for creating places that greatly enhance human
+                  experience. <br />
+                  To provide client focused service through our responsible
+                  practice of Architecture.
+                </p>
+                <div class="btn-box">
+                  <a href="about.html" class="button-style-1">
+                    About Us
+                    <span class="icon-right"></span>
+                  </a>
+                  <a href="services.html" class="button-style-2">
+                    Our Services
+                    <span class="icon-right"></span>
                   </a>
                 </div>
+                <div class="banner-one__curved-circle">
+                  <div class="curved-circle">Get In Touch - Get In Touch -</div>
+                  <!-- /.curved-circle -->
+                  <div class="banner-one__video-link">
+                    <a href="contact.html">
+                      <div class="banner-one__video-icon">
+                        <span class="icon-up-right-arrow"></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <!-- /.curved-circle -->
             </div>
           </div>
         </div>
@@ -864,6 +864,33 @@
     <script src="assets/vendors/marquee/marquee.min.js"></script>
     <!-- template js -->
     <script src="assets/js/arckytec.js"></script>
+    <script>
+      const images = [
+        "assets/images/services/exteriorcover.jpg",
+        "assets/images/services/ext1.jpg",
+        "assets/images/services/ext2.jpg",
+        "assets/images/services/ext3.jpg",
+        "assets/images/services/ext4.jpg",
+        "assets/images/services/ext5.jpg",
+        "assets/images/services/ext6.jpg",
+        "assets/images/services/ext7.jpg",
+        "assets/images/services/ext8.jpg",
+        "assets/images/services/ext9.jpg",
+        "assets/images/services/ext10.jpg",
+        "assets/images/services/ext11.jpg",
+      ]; // Replace with your image filenames
+      let currentImageIndex = 0;
+
+      function changeBackgroundImage() {
+        const backgroundImage = document.getElementById("backgroundslide");
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        const imageUrl = `url(${images[currentImageIndex]})`;
+
+        backgroundImage.style.backgroundImage = imageUrl;
+      }
+
+      setInterval(changeBackgroundImage, 5000); // Change image every 5 seconds (adjust as needed)
+    </script>
   </body>
 
   <!-- Mirrored from figtheme.com/html/arckytec/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 27 Dec 2023 18:38:26 GMT -->

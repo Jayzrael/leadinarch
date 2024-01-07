@@ -1517,13 +1517,6 @@
     font-size: 75px;
   }
 
-  .banner-one__curved-circle {
-    position: relative;
-    top: 0;
-    right: 0;
-    margin-top: 50px;
-  }
-
   .main-slider-two__social {
     display: none;
   }
@@ -1557,6 +1550,12 @@
   .banner-four__big-text {
     font-size: 70px;
     line-height: 80px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .banner-one__curved-circle {
+    display: none;
   }
 }
 
