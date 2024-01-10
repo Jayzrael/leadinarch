@@ -217,66 +217,37 @@
       <!-- /.stricky-header -->
 
       <!-- Banner One Start -->
-      <section class="banner-one">
-        <div id="backgroundslide" class="banner-one__inner">
-          <!-- <div class="banner-one__img">
-            <img src="assets/images/resources/banner-one-img-1-1.jpg" alt="" />
-          </div>
-          <div class="banner-one__shape-1 float-bob-y"></div>
-          <div class="banner-one__shape-2 float-bob-y">
-            <img src="assets/images/shapes/banner-one-shape-2.png" alt="" />
-          </div>
-          <div class="banner-one__shape-3 float-bob-x">
-            <img src="assets/images/shapes/banner-one-shape-3.png" alt="" />
-          </div>
-          <div class="banner-one__shape-4 img-bounce">
-            <img src="assets/images/shapes/banner-one-shape-4.png" alt="" />
-          </div> -->
-          <div class="container">
-            <div class="background-image">
-              <div class="contentt">
-                <p class="banner-one__sub-title">Inspiring Innovation Ahead</p>
-                <h2 class="banner-one__title">
-                  <!-- Creative and Awe <br />
-                  inspiring Spaces and <br />
-                  Structures -->
-                  We Will Make <br />
-                  Your Dream Come True
-                </h2>
-                <p class="banner-one__text">
-                  Providing top-notch designs and services through unrivalled
-                  creativity to our clients with honesty and integrity <br />
-                  To be renowned for creating places that greatly enhance human
-                  experience. <br />
-                  To provide client focused service through our responsible
-                  practice of Architecture.
-                </p>
-                <div class="btn-box">
-                  <a href="about.html" class="button-style-1">
-                    About Us
-                    <span class="icon-right"></span>
-                  </a>
-                  <a href="services.html" class="button-style-2">
-                    Our Services
-                    <span class="icon-right"></span>
-                  </a>
-                </div>
-                <div class="banner-one__curved-circle">
-                  <div class="curved-circle">Get In Touch - Get In Touch -</div>
-                  <!-- /.curved-circle -->
-                  <div class="banner-one__video-link">
-                    <a href="contact.html">
-                      <div class="banner-one__video-icon">
-                        <span class="icon-up-right-arrow"></span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div class="containerr">
+        <div class="background-image" id="backgroundImage"></div>
+        <div class="content">
+          <p class="text1">Inspiring Innovation Ahead</p>
+          <h2 class="text2">
+            <!-- Creative and Awe <br />
+            inspiring Spaces and <br />
+            Structures -->
+            We Will Make <br />
+            Your Dream Come True
+          </h2>
+          <p class="text3">
+            Providing top-notch designs and services through unrivalled
+            creativity to our clients with honesty and integrity <br />
+            To be renowned for creating places that greatly enhance human
+            experience. <br />
+            To provide client focused service through our responsible practice
+            of Architecture.
+          </p>
+          <div class="btn-box">
+            <a href="about.html" class="button-style-1">
+              About Us
+              <span class="icon-right"></span>
+            </a>
+            <a href="services.html" class="button-style-2">
+              Our Services
+              <span class="icon-right"></span>
+            </a>
           </div>
         </div>
-      </section>
+      </div>
       <!--Banner One End -->
 
       <!--About One Start -->
@@ -866,23 +837,21 @@
     <script src="assets/js/arckytec.js"></script>
     <script>
       const images = [
+        "assets/images/services/ext22.jpg",
         "assets/images/services/exteriorcover.jpg",
         "assets/images/services/ext1.jpg",
         "assets/images/services/ext2.jpg",
         "assets/images/services/ext3.jpg",
         "assets/images/services/ext4.jpg",
         "assets/images/services/ext5.jpg",
-        "assets/images/services/ext6.jpg",
-        "assets/images/services/ext7.jpg",
         "assets/images/services/ext8.jpg",
-        "assets/images/services/ext9.jpg",
         "assets/images/services/ext10.jpg",
         "assets/images/services/ext11.jpg",
       ]; // Replace with your image filenames
       let currentImageIndex = 0;
 
       function changeBackgroundImage() {
-        const backgroundImage = document.getElementById("backgroundslide");
+        const backgroundImage = document.getElementById("backgroundImage");
         currentImageIndex = (currentImageIndex + 1) % images.length;
         const imageUrl = `url(${images[currentImageIndex]})`;
 
