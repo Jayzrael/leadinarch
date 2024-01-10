@@ -2568,6 +2568,7 @@ a.button-style-3:hover::before {
   background: rgba(0, 0, 0, 0.65);
   background-size: contain;
   padding: 20px;
+  gap: 10px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -2578,6 +2579,7 @@ a.button-style-3:hover::before {
     margin: 0;
     padding-top: 30px;
     height: 100%;
+    padding-bottom: 30px;
   }
 
   .background-image {
