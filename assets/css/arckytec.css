@@ -6327,6 +6327,7 @@ a.button-style-3:hover::before {
   opacity: 1;
 }
 
+
 .services-two__img img {
   width: 100%;
   -webkit-transform: scale(1);
@@ -10676,4 +10677,42 @@ a.button-style-3:hover::before {
   height: 390px;
   width: 1px;
   background-color: var(--arckytec-base);
+}
+
+.gallery-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pagination button.active {
+  background-color: #45a049;
 }
